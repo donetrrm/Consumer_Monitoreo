@@ -80,7 +80,7 @@ async function getImagen() {
     method: 'GET',
     headers: { 'Content-Type': 'text/plain' },
   };
-  const response = await fetch("http://192.168.100.62/", requestOptions);
+  const response = await fetch("http://192.168.100.57/", requestOptions);
   if (!response.ok) {
     throw new Error(`Error al enviar mensaje a la API: ${response.status} - ${response.statusText}`);
   }
