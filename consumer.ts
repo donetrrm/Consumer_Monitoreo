@@ -38,7 +38,7 @@ const  url = process.env.AMQP_URL || "";
 }
 
 async function enviarMensajeALaAPI(message: any) {
-  const apiUrl = 'http://localhost:4000/reportes';
+  const apiUrl = 'http://3.218.124.28/reportes';
   const messageJSON = JSON.parse(message);
   
   const imagen = await getImagen();
